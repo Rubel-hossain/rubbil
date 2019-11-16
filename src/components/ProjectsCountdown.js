@@ -18,15 +18,11 @@ class ProjectsCountdown extends Component {
                              <Col>
                                <div className="single-project">
                                  <span>
-                                 <CountUp start={-100} end={850}>
+                                 <CountUp start={0} end={850} duration={40} delay={1}>
                                   {({ countUpRef, start }) => (
-                                    
                                       <VisibilitySensor onChange={start} delayedCall>
                                            <span ref={countUpRef}></span>
                                       </VisibilitySensor>
-                                      
-                                      
-                                    
                                   )}
                                 </CountUp>
                                  </span>
@@ -35,7 +31,15 @@ class ProjectsCountdown extends Component {
                              </Col>
                              <Col>
                              <div className="single-project">
-                                 <span>586</span>
+                                 <span>
+                                 <CountUp start={0} end={1250} duration={50} delay={1}>
+                                  {({ countUpRef, start }) => (
+                                      <VisibilitySensor onChange={start} delayedCall>
+                                           <span ref={countUpRef}></span>
+                                      </VisibilitySensor>
+                                  )}
+                                </CountUp>
+                                 </span>
                                  <p>TOTAL CLIENTS</p>
                                </div>
                              </Col>
@@ -46,14 +50,12 @@ class ProjectsCountdown extends Component {
                          <Card>
                           <Card.Body>
                               <Card.Title>How I Work</Card.Title>
-                        
                                   <ul>
                                     <li><span><FontAwesomeIcon icon={faCheckCircle}/></span> Requirement Gathering</li>
                                     <li><span><FontAwesomeIcon icon={faCheckCircle}/></span> System Analysis</li>
                                     <li><span><FontAwesomeIcon icon={faCheckCircle}/></span> Coding Testing</li>
                                     <li><span><FontAwesomeIcon icon={faCheckCircle}/></span> Implementation</li>
                                 </ul>
-                              
                             </Card.Body>
                           </Card>
                          </div>

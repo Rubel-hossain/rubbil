@@ -10,13 +10,6 @@ class heroArea extends Component {
     render() {
         return (
           <Fragment>
-              <Container className="topMenu">
-                  <Row>
-                      <Col>
-                        <TopNavigation/>
-                      </Col>
-                  </Row>
-              </Container>
               <Container fluid={true} className="heroArea">
                   <Row>
                       <Col>
